@@ -18,50 +18,10 @@ It enables **real-time AI image generation**, queueing, and retrieval **via API 
 
 ---
 
-## **🛠️ Installation**
-### **1️⃣ Clone the Repository**
-```bash
-git clone https://github.com/your-username/comfyui-api.git
-cd comfyui-api
-```
+## **🛠️ Installation, Hosting ComfyUI on Google Colab & Cloudflare**
+### **Use The Above Colab Simply Run It Straight Forward.**
 
-### **2️⃣ Install Dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-### **3️⃣ Run the Flask Server**
-```bash
-python app.py
-```
-Your API will now be accessible at:  
-🔗 **http://127.0.0.1:5000**
-
----
-
-## **📡 Hosting ComfyUI on Google Colab & Cloudflare**
-To run ComfyUI on **Google Colab**, follow these steps:
-
-1. **Open Google Colab** → Create a new notebook  
-2. **Run the following commands**:
-   ```python
-   !git clone https://github.com/comfyanonymous/ComfyUI.git
-   %cd ComfyUI
-   !pip install -r requirements.txt
-   ```
-3. **Start the ComfyUI Server**:
-   ```python
-   !python main.py
-   ```
-4. **Expose API via Cloudflare**:
-   ```python
-   !apt install cloudflared
-   !cloudflared tunnel --url http://127.0.0.1:8188
-   ```
-5. Copy the generated **Cloudflare URL** (e.g., `https://your-cloudflare-link.trycloudflare.com`)
-
-🎉 **Now your ComfyUI is live on the internet!** 🚀
-
+### 🎉 **Now your ComfyUI is live on the internet!** 🚀
 ---
 
 ## **🔗 API Endpoints**
@@ -83,6 +43,7 @@ comfyui-api/
 │── assets/                 # Store animations/gifs for the README
 │── app.py                  # Flask API code
 │── requirements.txt         # Dependencies
+│── comfyui_colab_file.ipynb  # Colab File
 │── tutorial.json            # Example workflow JSON
 │── README.md                # This file
 │── .gitignore               # Git ignored files
@@ -91,13 +52,13 @@ comfyui-api/
 ---
 
 ## **📜 License**
-This project is licensed under the **MIT License**.
+This project is licensed under the **Maniya Gang**.
 
 ---
 
 ## **💡 Contributors**
-- 🚀 **Your Name** - *Lead Developer*  
-- 🎨 **Contributor Name** - *Docs & Testing*  
+- 🚀 **Manish Dhaye** - *Lead Developer*  
+- 🎨 **Coming Soon** - *Docs & Testing*  
 
 Feel free to **fork this project** and contribute! 🎯
 
