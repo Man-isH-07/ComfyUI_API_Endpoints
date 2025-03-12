@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prompt Generator</title>
+    <style>
+        body 
+        { font-family: Arial, sans-serif; margin: 20px; }
+        .form-container 
+        { max-width: 600px; }
+        .input-group 
+        { margin: 10px 0; }
+        label 
+        { display: inline-block; width: 150px; }
+        pre 
+        { background: #f4f4f4; padding: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Prompt Generator</h1>
+    <div class="form-container">
+        <div class="input-group">
+            <label for="categorySelect">Select News Category:</label>
+            <select id="categorySelect" onchange="loadNews()">
+                <option value="WORLD">World</option>
+                <option value="NATION">Nation</option>
+                <option value="BUSINESS">Business</option>
+                <option value="TECHNOLOGY">Technology</option>
+                <option value="ENTERTAINMENT">Entertainment</option>
+                <option value="SPORTS">Sports</option>
+                <option value="SCIENCE">Science</option>
+                <option value="HEALTH">Health</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="newsSelect">Select News (Trend):</label>
+            <select id="newsSelect">
+                <option value="">-- Select News --</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="postTypeSelect">Select Post Type:</label>
+            <select id="postTypeSelect" onchange="loadForm()">
+                <option value="">-- Select --</option>
+            </select>
+        </div>
+        <div id="formFields"></div>
+        <button id="generateBtn" onclick="generatePrompt()" disabled>Generate</button>
+        <button id="updateTrendsBtn" onclick="updateTrends()">Update Trends</button>
+    </div>
+    <h2>Generated Prompt</h2>
+    <pre id="result"></pre>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
